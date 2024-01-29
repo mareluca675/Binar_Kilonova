@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, v[10001], i = 0;
+    
+    cin >> n;
+    
+    while(n > 1)
+    {
+        i ++;
+        v[i] = n % 2;
+        n /= 2;
+    }
+    
+    cout << 1;
+    
+    while(i > 0)
+    {
+        cout << v[i];
+        i --;
+    }
+
+    return 0;
+}
